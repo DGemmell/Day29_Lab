@@ -14,7 +14,7 @@ public class TestManager {
     }
     @Test
     public void canGetDepartmentName(){
-        assertEquals("Human Resources", manager.setDepartment_name());
+        assertEquals("Human Resources", manager.getDepartment_name());
     }
 
     @Test
@@ -29,12 +29,12 @@ public class TestManager {
 
     @Test
     public double canGetSalary(){
-        assertEquals(30000.00, manager.getSalary());
+        assertEquals(30000.00, manager.getSalary(), 0.01);
     }
 
     @Test
     public double canGetBonus(){
-        assertEquals(300, manager.getBonus());
+        assertEquals(300, manager.getBonus(), 0.01);
     }
 
 }
