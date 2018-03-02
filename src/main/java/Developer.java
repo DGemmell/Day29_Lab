@@ -1,6 +1,6 @@
 public class Developer extends Employee {
 
-    public Developer(String name, int ni_number, double salary) {
-        super(name, ni_number, salary);
+    public Developer(String name, String niNumber, double salary, double bonus) {
+        super(name, niNumber, salary, bonus);
     }
 }

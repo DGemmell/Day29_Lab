@@ -9,12 +9,12 @@ public class TestManager {
 
     @Before
     public void before() {
-        manager = new Manager("Scott Stevenson","ba4567999", 30000, "Human Resources");
+        manager = new Manager("Scott Stevenson","ba4567999", 30000, 3000, "Human Resources");
 
     }
     @Test
     public void canGetDepartmentName(){
-        assertEquals("Human Resources", manager.getDepartment_name());
+        assertEquals("Human Resources", manager.getDepartmentName());
     }
 
     @Test
@@ -23,18 +23,18 @@ public class TestManager {
     }
 
     @Test
-    public void canGetNi_number(){
-        assertEquals("ba4567999", manager.getNI_Number());
+    public void canGetNiNumber(){
+        assertEquals("ba4567999", manager.getNiNumber());
     }
 
     @Test
-    public double canGetSalary(){
+    public void canGetSalary(){
         assertEquals(30000.00, manager.getSalary(), 0.01);
     }
 
     @Test
-    public double canGetBonus(){
-        assertEquals(300, manager.getBonus(), 0.01);
+    public void canGetBonus(){
+        assertEquals(300, manager.Bonus(), 0.01);
     }
 
 }

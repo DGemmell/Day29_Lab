@@ -2,13 +2,16 @@ public class Manager extends Employee {
 
     private String departmentName;
 
-    public Manager(String name, int niNumber, double salary, String departmentName) {
-        super(name, niNumber, salary);
+    public Manager(String name, String niNumber, double salary, double bonus, String departmentName) {
+        super(name, niNumber, salary, bonus);
         this.departmentName = departmentName;
     }
 
-    public String setDepartmentName() {
-        this.departmentName = departmentName;
+    public void setDepartmentName(String departmentName) {
+        this.departmentName =  departmentName;
     }
 
+    public String getDepartmentName() {
+        return departmentName;
+    }
 }
