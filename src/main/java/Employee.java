@@ -4,17 +4,19 @@ public abstract class Employee {
     String name;
     int ni_number;
     double salary;
+    String bonus;
 
-    public Employee (String name, String ninumber, double salary){
+    public Employee (String name, String ni_number, double salary, double bonus){
         this.name = new name;
-        this.ninumber = new ninumber;
+        this.ni_number = new ni_number;
         this.salary = new salary;
+        this.bonus = new bonus;
 
     public String getName(){
         return name;
     }
 
-    public String getNinumber{
+    public String getNi_number(){
         return ni_number;
     }
 
@@ -22,10 +24,19 @@ public abstract class Employee {
         return salary;
     }
 
-    public Double raiseSalary(Double salary){
-            return this.salary; }
+    public Double raiseSalary(double salary){
+        if (salary >= 0){
+            this.salary += salary;
+    }
 
     public double Bonus){
-        return this.salary * 0.01; }
+        return this.salary() * 0.01; }
 
 }
+
+    public int getBonus() {
+        return bonus();
+    }
+}
+
+

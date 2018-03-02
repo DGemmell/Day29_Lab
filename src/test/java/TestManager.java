@@ -1,27 +1,40 @@
+
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 public class TestManager {
     Manager manager;
-    Employee employee;
 
     @Before
     public void before() {
-        manager = new manager
-        employee = new Employee("mat jones", "ba4567999", 30000);
+        manager = new Manager("Scott Stevenson","ba4567999", 30000, "Human Resources");
+
+    }
+    @Test
+    public void canGetDepartmentName(){
+        assertEquals("Human Resources", manager.setDepartment_name());
+    }
+
+    @Test
+    public void canGetName(){
+        assertEquals("Scott Stevenson", manager.getName());
+    }
+
+    @Test
+    public void canGetNi_number(){
+        assertEquals("ba4567999", manager.getNI_Number());
     }
 
     @Test
     public double canGetSalary(){
-        assertEquals(30000, employee.getRaiseSalary());
+        assertEquals(30000.00, manager.getSalary());
     }
 
     @Test
     public double canGetBonus(){
-        assertEquals(300, employee.getBonus());
+        assertEquals(300, manager.getBonus());
     }
 
 }
-
-
-

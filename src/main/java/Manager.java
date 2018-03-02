@@ -24,7 +24,8 @@ public class Manager extends Employee {
     }
 
     public Double raiseSalary(Double newSalary){
-        return super.raiseSalary(); }
+        return super.raiseSalary();
+    }
 
     public Double payBonus(Double Bonus) { return super.payBonus(); }
 }
